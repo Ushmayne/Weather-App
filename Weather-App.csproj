@@ -8,5 +8,8 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+  <ItemGroup>
+  <EmbeddedResource Include="weather.jpg" />
+</ItemGroup>
 
 </Project>

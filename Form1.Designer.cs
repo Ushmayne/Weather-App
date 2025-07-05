@@ -20,6 +20,8 @@ partial class Form1
         base.Dispose(disposing);
     }
 
+    
+
     #region Windows Form Designer generated code
 
     /// <summary>
@@ -31,7 +33,10 @@ partial class Form1
         this.components = new System.ComponentModel.Container();
         this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         this.ClientSize = new System.Drawing.Size(800, 450);
-        this.Text = "Form1";
+        this.BackColor = System.Drawing.Color.LightBlue;
+        this.BackgroundImage = System.Drawing.Image.FromFile("C:\\Users\\usman\\Videos\\New Projects Git\\Weather app\\Weather-App\\weather.jpg");//insert file path to your image
+        this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+        this.Text = "Weather App";
     }
 
     #endregion
