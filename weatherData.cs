@@ -14,37 +14,37 @@ namespace Weather_App
     {
         public class coord
         {
-            double lon { get; set; }
-            double lat { get; set; }
+            public double lon { get; set; }
+            public double lat { get; set; }
         }
         public class weather
         {
-            string main { get; set; }
-            string description { get; set; }
-            string icon { get; set; }
+            public string main { get; set; }
+            public string description { get; set; }
+            public string icon { get; set; }
         }
         public class main
         {
-            double temp { get; set; }
-            double feels_like { get; set; }
-            double temp_min { get; set; }
-            double temp_max { get; set; }
-            int pressure { get; set; }
-            int humidity { get; set; }
-            int sea_level { get; set; }
-            int grnd_level { get; set; }
+            public double temp { get; set; }
+            public double feels_like { get; set; }
+            public double temp_min { get; set; }
+            public double temp_max { get; set; }
+            public int pressure { get; set; }
+            public int humidity { get; set; }
+            public int sea_level { get; set; }
+            public int grnd_level { get; set; }
         }
 
         public class wind
         {
-            double speed { get; set; }
-            int deg { get; set; }
+            public double speed { get; set; }
+            public int deg { get; set; }
         }
 
         public class sys
         {
-            long sunrise { get; set; }
-            long sunset { get; set; }
+            public long sunrise { get; set; }
+            public long sunset { get; set; }
         }
 
         public class root

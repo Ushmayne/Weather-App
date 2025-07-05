@@ -9,7 +9,14 @@ partial class Form1
     ///  Required designer variable.
     /// </summary>
     private System.ComponentModel.IContainer components = null;
-
+    private TextBox cityTextBox;
+    private Button checkWeatherButton;
+    private Label condition;
+    private Label detail;
+    private Label sunrise;
+    private Label sunset;
+    private Label windSpeed;
+    private Label pressure;
     /// <summary>
     ///  Clean up any resources being used.
     /// </summary>
@@ -42,7 +49,7 @@ partial class Form1
         this.Text = "Weather App";
         this.Paint += ScreenText_Paint;
         this.DoubleBuffered = true; // Enable double buffering to reduce flickering
-        
+
 
     }
 
@@ -55,32 +62,17 @@ partial class Form1
 
         // Draw the text on the form
         e.Graphics.DrawString("City: ", font, brush, point);
-        point = new PointF(70, 130);
-        e.Graphics.DrawString("Condition: ", font, brush, point);
-        point = new PointF(70, 160);
-        e.Graphics.DrawString("Detail: ", font, brush, point);
         point = new PointF(70, 240);
         e.Graphics.DrawString("Sunrise: ", font, brush, point);
         point = new PointF(70, 280);
         e.Graphics.DrawString("Sunset: ", font, brush, point);
-        point = new PointF(310, 130);
+        point = new PointF(310, 150);
         e.Graphics.DrawString("Wind Speed: ", font, brush, point);
-        point = new PointF(310, 160);
+        point = new PointF(310, 180);
         e.Graphics.DrawString("Pressure: ", font, brush, point);
-
-        TextBox cityTextBox = new TextBox();
-        cityTextBox.Location = new Point(110, 70);
-        cityTextBox.Size = new Size(200, 80);
-        cityTextBox.PlaceholderText = "Enter city name";
-
-        Button checkWeatherButton = new Button();
-        checkWeatherButton.Text = "Search";
-        checkWeatherButton.Location = new Point(320, 70);
-        //checkWeatherButton.Click += CheckWeatherButton_Click;
-        this.Controls.Add(cityTextBox);
-        this.Controls.Add(checkWeatherButton);
-
     }
+    
+    
 
     #endregion
 }
